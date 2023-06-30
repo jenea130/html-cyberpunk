@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff'),
+        url('Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-LightItalic.eot');
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-LightItalic.woff2') format('woff2'),
+        url('Roboto-LightItalic.woff') format('woff'),
+        url('Roboto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'Archangelsk';
+	src: url('Archangelsk.eot');
+	src: local('Archangelsk'),
+		url('Archangelsk.eot?#iefix') format('embedded-opentype'),
+		url('Archangelsk.woff') format('woff'),
+		url('Archangelsk.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    color: black;
+    background: white;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100vh;
+    background: green;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+.main-header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-social {
+    position: relative;
+    top: -3px;
+    display: flex;
+    align-items: center;
+}
+
+.header-social__link {
+    display: block;
+    margin-left: 40px;
+}
+
+
+.header-social__link img {
+    vertical-align: middle;
+}
