@@ -1,48 +1,54 @@
+:root {
+    --accent: #F8F200;
+    --font-1: "Roboto", sans-serif;
+    --font-2: "Archangelsk", sans-serif;
+}
+
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Bold.eot');
+    src: url('fonts/Roboto-Bold.eot');
     src: local('Roboto Bold'), local('Roboto-Bold'),
-        url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Roboto-Bold.woff2') format('woff2'),
-        url('Roboto-Bold.woff') format('woff'),
-        url('Roboto-Bold.ttf') format('truetype');
+        url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Bold.woff2') format('woff2'),
+        url('fonts/Roboto-Bold.woff') format('woff'),
+        url('fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot');
     src: local('Roboto'), local('Roboto-Regular'),
-        url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff'),
-        url('Roboto-Regular.ttf') format('truetype');
+        url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-LightItalic.eot');
+    src: url('fonts/Roboto-LightItalic.eot');
     src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
-        url('Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('Roboto-LightItalic.woff2') format('woff2'),
-        url('Roboto-LightItalic.woff') format('woff'),
-        url('Roboto-LightItalic.ttf') format('truetype');
+        url('fonts/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('fonts/Roboto-LightItalic.woff') format('woff'),
+        url('fonts/Roboto-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-	font-family: 'Archangelsk';
-	src: url('Archangelsk.eot');
-	src: local('Archangelsk'),
-		url('Archangelsk.eot?#iefix') format('embedded-opentype'),
-		url('Archangelsk.woff') format('woff'),
-		url('Archangelsk.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Archangelsk';
+    src: url('fonts/Archangelsk.eot');
+    src: local('Archangelsk'),
+        url('fonts/Archangelsk.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Archangelsk.woff') format('woff'),
+        url('fonts/Archangelsk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -57,10 +63,12 @@ a {
 }
 
 body {
+    position: relative;
+    padding-bottom: 1000px;
     font-size: 18px;
+    font-family: var(--font-1);
     color: black;
     background: white;
-    position: relative;
 }
 
 body::after {
@@ -68,6 +76,7 @@ body::after {
     position: absolute;
     top: 0;
     left: 50%;
+    display: none;
     width: 1px;
     height: 100vh;
     background: green;
@@ -110,7 +119,55 @@ li {
     margin-left: 40px;
 }
 
-
 .header-social__link img {
     vertical-align: middle;
+}
+
+.home-intro {
+    position: relative;
+    height: 1000px;
+}
+
+.home-intro__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.home-intro .container {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.home-intro__content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 70px;
+    width: 624px;
+    background: var(--accent);
+    -webkit-clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+    clip-path: polygon(8% 0, 100% 0, 100% 86%, 92% 100%, 0 100%, 0 14%);
+}
+
+.home-intro__title {
+    margin-bottom: 25px;
+    font-family: var(--font-2);
+    font-size: 62px;
+    font-weight: normal;
+    line-height: 1.04;
+}
+
+.btn {
+    display: inline-block;
+    padding: 24px 50px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+    background: #000;
 }
