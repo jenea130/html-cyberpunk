@@ -179,10 +179,18 @@ li {
     color: #000;
 }
 
+.title--light {
+    color: #ffffff;
+}
+
 .text {
     font-size: 18px;
     line-height: 34px;
     color: #777;
+}
+
+.text--light {
+    color: #ffffff;
 }
 
 .text strong {
@@ -232,3 +240,159 @@ li {
     display: block;
 }
 
+.play {
+
+    color: #ffffff;
+    background: #000000;
+}
+
+.play__header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    padding-top: 11px;
+}
+
+.play__logo {
+    margin-right: 32px;
+}
+
+.play__title {
+    position: relative;
+    top: -14px;
+}
+
+.play__text {
+    margin-bottom: 75px;
+    max-width: 932px;
+}
+
+.play__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.play__form {
+    flex: 0 0 460px;
+}
+
+.play__img {
+    position: relative;
+    top: -63px;
+}
+
+.form__group {
+    margin-bottom: 24px;
+    height: 46px;
+}
+
+.form__group input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #777;
+}
+
+.form__group input::placeholder {
+    color: #ffffff;
+}
+
+.form__file {
+    position: relative;
+    margin-top: 34px;
+    margin-bottom: 37px;
+    height: 120px;
+}
+
+.form__file input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+    border: 1px dashed #777;
+}
+
+.file__title {
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.file__title:hover {
+    text-decoration: none;
+}
+
+.file__text {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.form__submit {
+    margin-bottom: 15px;
+    padding: 19px 50px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--font-1);
+    color: #000000;
+    background: var(--accent);
+    border: none;
+    cursor: pointer;
+}
+
+.form__privacy input {
+    display: none;
+}
+
+.form__privacy label {
+    position: relative;
+    display: block;
+    padding-left: 24px;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.form__privacy label:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #777;
+}
+
+
+.form__privacy label:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: url("img/check.png") no-repeat center;
+    opacity: 0;
+}
+
+.form__privacy input:checked+label::after {
+    opacity: 1;
+}
