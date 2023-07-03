@@ -197,6 +197,10 @@ li {
     color: #ffffff;
 }
 
+.text--dark {
+    color: #000;
+}
+
 .text strong {
     font-weight: bold;
     color: #52BEDC;
