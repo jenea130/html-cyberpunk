@@ -64,11 +64,15 @@ a {
 
 body {
     position: relative;
-    padding-bottom: 1000px;
     font-size: 18px;
     font-family: var(--font-1);
     color: black;
     background: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 body::after {
@@ -249,7 +253,6 @@ li {
 }
 
 .play {
-
     color: #ffffff;
     background: #000000;
 }
@@ -533,11 +536,11 @@ li {
 .buy__logo {
     margin: 0 80px 43px 0;
 
-    
+
 }
 
 .footer-top {
-    padding: 13px 0;
+    padding: 13px 0 10px;
 }
 
 .footer-top__wrap {
@@ -559,4 +562,14 @@ li {
     display: block;
     margin-left: 32px;
     font-size: 18px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0;
+    font-size: 12px;
+    color: white;
+    background: #000;
 }
