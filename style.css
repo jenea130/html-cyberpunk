@@ -535,3 +535,28 @@ li {
 
     
 }
+
+.footer-top {
+    padding: 13px 0;
+}
+
+.footer-top__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top__logo {
+    margin-right: 28px;
+}
+
+.footer-top__list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-top__list a {
+    display: block;
+    margin-left: 32px;
+    font-size: 18px;
+}
